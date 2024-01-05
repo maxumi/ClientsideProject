@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#OrderCounter {
+    border: 2px solid black;
+    margin-top: 5px;
+    width: 200px;
+    height: 35px;
+    text-align: center;
+}
+#OrderCounter h2{
+    margin-top: 0px;
+}
+
+#Container{
+    display: block;
+}
+
+#Menu{
+    border-style: solid;
+    margin-top: 10px;
+    height: 60vh;
+}
+
+.MenuItems{
+    display: flex;
+}
+
+.MenuItems p{
+    margin-left: 10px;
+
+}
+.MenuItems input[type="number"]{
+    width: 30px; 
+    height: 20px;
+}
