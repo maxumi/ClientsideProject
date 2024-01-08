@@ -11,10 +11,29 @@
         </div>
         <div id="Menu">
             <div class="MenuItems">
-                <p>HamBurger</p>
-                <input type="number" min="0" value="0">
+                <p>hovedret</p>
+                <input type="number" id="mainCourse" min="0" max="99" value="0">
+            </div>
+            <div class="MenuItems">
+                <p>drikkelse</p>
+                <input type="number" id="drink" min="0" max="99" value="0">
+            </div>
+            <div class="MenuItems">
+                <p>tilbehør</p>
+                <input type="number" id="accessories" min="0" max="99" value="0">
+            </div>
+            <div class="MenuItems">
+                <p>dessert</p>
+                <input type="number" id="Dessert" min="0" max="99" value="0">
             </div>
         </div>
+        <button id="updateOrderButton" onclick="updateOrderDetails()">Update Order</button>
+        <div id="OrderDetails">
+
+        </div>
+
     </div>
+
+    <script src="Script.js"></script>
 </body>
 </html>
