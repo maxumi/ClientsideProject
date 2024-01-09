@@ -24,8 +24,9 @@ body {
 #Menu{
     border-style: solid;
     margin-top: 10px;
-    height: 60vh;
+    min-height: 60vh;
     background-color: white;
+    
 }
 
 .MenuItems{
@@ -54,6 +55,17 @@ body {
 
 #updateOrderButton:hover {
     background-color: darkblue;
+}
+#confirmOrderButton{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+#confirmOrderButton:hover {
+    background-color: rgba(3, 3, 117, 0.767);
 }
 
 #OrderDetails {

@@ -5,29 +5,50 @@
 <link rel="stylesheet" href="Style.css">
 </head>
 <body>
-    <div id="Container">
+    <div id="Container" >
         <div id="OrderCounter">
             <h2>Order Number: <span id="orderNumber">1</span></h2>
         </div>
         <div id="Menu">
             <div class="MenuItems">
-                <p>hovedret</p>
-                <input type="number" id="mainCourse" min="0" max="99" value="0">
+                <p>Big Mac Pris:32kr</p>
+                <input type="number" id="bigMac" min="0" max="99" value="0">
             </div>
             <div class="MenuItems">
-                <p>drikkelse</p>
-                <input type="number" id="drink" min="0" max="99" value="0">
+                <p>McFeast Pris:37kr</p>
+                <input type="number" id="McFeast" min="0" max="99" value="0">
             </div>
             <div class="MenuItems">
-                <p>tilbehør</p>
-                <input type="number" id="accessories" min="0" max="99" value="0">
+                <p>McChicken Pris:32kr</p>
+                <input type="number" id="McChicken" min="0" max="99" value="0">
             </div>
             <div class="MenuItems">
-                <p>dessert</p>
-                <input type="number" id="Dessert" min="0" max="99" value="0">
+                <p>Sodavand Pris:17kr</p>
+                <input type="number" id="Sodavand" min="0" max="99" value="0">
+            </div>
+            <div class="MenuItems">
+                <p>Espresso Pris:12kr</p>
+                <input type="number" id="Espresso" min="0" max="99" value="0">
+            </div>
+            <div class="MenuItems">
+                <p>Pommes Frites Pris:20kr</p>
+                <input type="number" id="PommesFrites" min="0" max="99" value="0">
+            </div>
+            <div class="MenuItems">
+                <p>Dips Pris:20kr</p>
+                <input type="number" id="Dips" min="0" max="99" value="0">
+            </div>
+            <div class="MenuItems">
+                <p>McFlurry Pris:35kr</p>
+                <input type="number" id="McFlurry" min="0" max="99" value="0">
+            </div>
+            <div class="MenuItems">
+                <p>Milkshakes Pris:35kr</p>
+                <input type="number" id="Milkshakes" min="0" max="99" value="0">
             </div>
         </div>
         <button id="updateOrderButton" onclick="updateOrderDetails()">Update Order</button>
+        <button id="confirmOrderButton" onclick="confirmOrder()">Confirm Order</button>
         <div id="OrderDetails">
 
         </div>
