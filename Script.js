@@ -42,7 +42,7 @@ function confirmOrder() {
     orderNumberElement.classList.add("OrderText");
     orderDetailsDiv.appendChild(orderNumberElement);
 
-    // Menu items with their prices and quantities
+    // Menu items with their prices and quantities. document.getElementById is so their value is input.
     const menuItems = {
         bigMac: { price: 32, quantity: parseInt(document.getElementById("bigMac").value) },
         mcFeast: { price: 37, quantity: parseInt(document.getElementById("McFeast").value) },
@@ -101,6 +101,13 @@ function confirmOrder() {
 
         alert("Time for a new order!");
 
-    }, 3000); // 3 seconds timer, adjust as needed
+    }, 3000); // 3 seconds timer, so you can read the order number
 
+}
+
+function CancelOrder(){
+    let orderDetailsDiv = document.getElementById("OrderDetails");
+    orderDetailsDiv.innerHTML = '';
+    const inputs = document.querySelectorAll('#Menu input[type="number"]');
+    inputs.forEach((elements) => elements.value = 0)
 }
